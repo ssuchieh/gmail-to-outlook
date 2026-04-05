@@ -1,5 +1,58 @@
 # Gmail to Outlook AI Extension
 
+[👉 Traditional Chinese Version Below / 中文版在下方](#-傳統中文---traditional-chinese)
+
+This browser extension seamlessly integrates Google's Gemini AI, allowing you to automatically extract meeting, event, or schedule details from an email with a single click in Gmail. It then outputs a perfectly formatted `.ics` calendar file tailored for **Microsoft Outlook**!
+
+## ✨ Core Features
+- **🤖 Smart Extraction (Gemini AI)**: Automatically parses dates, times, locations, meeting links, and summaries from your emails so you never have to copy and paste again.
+- **🎨 Modern UI (Glassmorphism)**: Elevates your Gmail experience with a premium, sleek Glassmorphism-styled summary modal.
+- **⚡ One-Click Export**: Generates an `.ics` file instantly that is fully compatible with Windows Outlook, Mac, and mobile email clients.
+- **🔐 Secure Local Processing**: Your data is handled entirely utilizing the secure Extension Manifest V3 environment without needing third-party proxy servers.
+
+---
+
+## 🛠️ Installation
+
+Since this is an "Unpacked Extension", please follow these manual steps to add it to your browser (Google Chrome or Microsoft Edge):
+
+1. **Get the Code**: Clone the repository or download it as a ZIP file and extract it.
+2. **Open Extensions Manager**:
+   - If using Google Chrome: Type `chrome://extensions/` in your address bar and press Enter.
+   - If using Microsoft Edge: Type `edge://extensions/` in your address bar and press Enter.
+3. **Enable Developer Mode**: Toggle the "Developer mode" switch, typically found in the top-right or bottom-left corner of the page.
+4. **Load the Extension**: Click the "Load unpacked" button in the top-left and select the extracted folder.
+5. **Configure Gemini API Key**:
+   - Once installed, locate the extension icon in your toolbar, right-click it, and select **"Options"**.
+   - Follow the included link to [Google AI Studio](https://aistudio.google.com/app/apikey) to generate a free API key.
+   - Paste the key in the settings page. It will automatically validate your key within seconds.
+
+---
+
+## 💡 Usage
+
+1. Open Gmail and click into an email containing event or scheduling details.
+2. You will see a premium blue **"Add to Outlook"** button securely placed right next to the email subject.
+3. Click the button and wait briefly while the AI processes the email text.
+4. A beautiful Glassmorphism Event Summary modal will slide in. Review the extracted Title, Time, and Location. 
+5. Click **"Download .ics"** to save the file. Open it, and Outlook will automatically populate a calendar event for you!
+
+---
+
+## 📂 File Structure
+- `manifest.json`: Configuration file utilizing the modern Chrome Extension Manifest V3 standard.
+- `background.js`: The Service Worker script that communicates securely with the Gemini API and constructs the `.ics` framework.
+- `content.js`: Handles injecting the UI buttons and modal windows into the Gmail interface.
+- `content.css`: Premium Glassmorphism styling and animations for the UI.
+- `options.html / options.js`: The options page to easily enter and natively validate your Gemini API Key.
+
+<br>
+<br>
+
+<hr>
+
+# 🇹🇼 傳統中文 / Traditional Chinese
+
 這個瀏覽器擴充功能完美結合了 Google 的 Gemini 人工智慧，讓您可以直接在 Gmail 中，按一下按鈕就將電子郵件內包含的會議、活動或行程，自動分析轉換為 **Microsoft Outlook** 支援的 `.ics` 行事曆檔案！
 
 ## ✨ 核心特色
