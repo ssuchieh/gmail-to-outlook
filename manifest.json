@@ -1,0 +1,35 @@
+{
+  "manifest_version": 3,
+  "name": "Gmail to Outlook AI",
+  "version": "1.0",
+  "description": "Uses AI to convert Gmail emails into Desktop Outlook Calendar events in one click.",
+  "permissions": [
+    "storage",
+    "downloads"
+  ],
+  "host_permissions": [
+    "https://generativelanguage.googleapis.com/*",
+    "https://api.extensionpay.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "https://mail.google.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "css": [
+        "content.css"
+      ],
+      "run_at": "document_idle"
+    }
+  ],
+  "background": {
+    "service_worker": "background.js"
+  },
+  "options_page": "options.html",
+  "action": {
+    "default_title": "Gmail to Outlook Preferences"
+  }
+}

@@ -1,0 +1,151 @@
+.gmail-to-outlook-btn {
+  background-color: #0078d4; /* Microsoft Outlook Blue */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 13px;
+  font-weight: 500;
+  cursor: pointer;
+  margin-left: 12px;
+  display: inline-flex;
+  align-items: center;
+  transition: background-color 0.2s ease;
+  z-index: 9999;
+}
+
+.gmail-to-outlook-btn:hover {
+  background-color: #106ebe;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.2);
+}
+
+.gmail-to-outlook-btn img {
+  width: 16px;
+  height: 16px;
+  margin-right: 6px;
+}
+
+/* --- UI Modal Styles --- */
+.g2o-modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 2147483647; /* Max z-index to appear over Gmail */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(0, 0, 0, 0.4);
+  backdrop-filter: blur(8px);
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.g2o-modal-overlay.g2o-visible {
+  opacity: 1;
+}
+
+.g2o-modal-content {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 16px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.2);
+  width: 450px;
+  max-width: 90%;
+  padding: 24px;
+  font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  transform: translateY(20px);
+  transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.g2o-modal-overlay.g2o-visible .g2o-modal-content {
+  transform: translateY(0);
+}
+
+.g2o-modal-title {
+  margin-top: 0;
+  margin-bottom: 20px;
+  font-size: 20px;
+  font-weight: 600;
+  color: #1f2937;
+  text-align: center;
+}
+
+.g2o-details-container {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.g2o-modal-row {
+  display: flex;
+  flex-direction: column;
+  background: rgba(255, 255, 255, 0.6);
+  padding: 10px 14px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.8);
+}
+
+.g2o-modal-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  font-weight: 700;
+  color: #6b7280;
+  margin-bottom: 4px;
+  letter-spacing: 0.5px;
+}
+
+.g2o-modal-value {
+  font-size: 14px;
+  color: #111827;
+  word-wrap: break-word;
+  line-height: 1.4;
+}
+
+.g2o-modal-actions {
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
+
+.g2o-btn {
+  padding: 10px 20px;
+  border-radius: 8px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  border: none;
+  transition: all 0.2s;
+}
+
+.g2o-btn-cancel {
+  background: transparent;
+  color: #4b5563;
+}
+
+.g2o-btn-cancel:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.g2o-btn-download {
+  background: #0078d4; /* Premium Outlook Blue */
+  color: #fff;
+  box-shadow: 0 4px 12px rgba(0, 120, 212, 0.3);
+}
+
+.g2o-btn-download:hover {
+  background: #106ebe;
+  box-shadow: 0 6px 16px rgba(0, 120, 212, 0.4);
+  transform: translateY(-1px);
+}
+
+.g2o-btn-download:disabled {
+  background: #9ca3af;
+  box-shadow: none;
+  cursor: not-allowed;
+  transform: none;
+}
