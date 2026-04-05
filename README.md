@@ -1,6 +1,6 @@
 # Gmail to Outlook AI Extension
 
-[👉 Traditional Chinese Version Below / 中文版在下方](#-傳統中文---traditional-chinese)
+[👉 Traditional Chinese Version Below / 中文版在下方](#-中文---traditional-chinese)
 
 This browser extension seamlessly integrates Google's Gemini AI, allowing you to automatically extract meeting, event, or schedule details from an email with a single click in Gmail. It then outputs a perfectly formatted `.ics` calendar file tailored for **Microsoft Outlook**!
 
@@ -51,7 +51,7 @@ Since this is an "Unpacked Extension", please follow these manual steps to add i
 
 <hr>
 
-# 🇹🇼 傳統中文 / Traditional Chinese
+# 🇹🇼 中文 / Traditional Chinese
 
 這個瀏覽器擴充功能完美結合了 Google 的 Gemini 人工智慧，讓您可以直接在 Gmail 中，按一下按鈕就將電子郵件內包含的會議、活動或行程，自動分析轉換為 **Microsoft Outlook** 支援的 `.ics` 行事曆檔案！
 
