@@ -26,6 +26,7 @@ Since this is an "Unpacked Extension", please follow these manual steps to add i
    - Once installed, locate the extension icon in your toolbar, right-click it, and select **"Options"**.
    - Follow the included link to [Google AI Studio](https://aistudio.google.com/app/apikey) to generate a free API key.
    - Paste the key in the settings page. It will automatically validate your key within seconds.
+   - 🛡️ **Privacy Guarantee**: Your API key is stored locally in your browser and is never uploaded to any third-party server. It is only transmitted securely directly to Google's official API during extraction.
 
 ---
 
@@ -77,6 +78,7 @@ Since this is an "Unpacked Extension", please follow these manual steps to add i
    - 安裝完成後，請找到右上角的擴充功能圖示，右鍵點擊該圖示並選擇**「選項」**(Options)。
    - 在此畫面上點擊連結前往 [Google AI Studio](https://aistudio.google.com/app/apikey) 免費申請一組 API 金鑰。
    - 將金鑰貼上並點擊保存，系統會在幾秒內自動驗證金鑰是否有效。
+   - 🛡️ **隱私安全保證**：您的 API 金鑰僅會儲存在本地端瀏覽器中，絕對不會上傳至任何第三方伺服器。只有在擷取內容時，才會透過安全連線直接且安全地傳送到 Google 的官方 API 進行處理。
 
 ---
 
